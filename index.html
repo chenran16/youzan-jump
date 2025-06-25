@@ -1,56 +1,42 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>欢迎访问我的有赞商城</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f7f7f7;
-    }
-    .container {
-      background: white;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.1);
-      display: inline-block;
-    }
-    h1 {
-      color: #333;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 16px;
-      background-color: #007aff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .tip {
-      margin-top: 20px;
-      color: #999;
-      font-size: 14px;
-    }
-  </style>
-  <script>
-    setTimeout(() => {
-      window.location.href = "https://s.c1ns.cn/vd3m3";
-    }, 3000);
-  </script>
-</head>
-<body>
-  <div class="container">
-    <h1>欢迎进入我的有赞商城</h1>
-    <p>正在跳转，请稍候...</p>
-    <a class="btn" href="https://s.c1ns.cn/vd3m3">点击立即跳转</a>
-    <div class="tip">如未自动跳转，请点击上方按钮</div>
-  </div>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>加载中...</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 30%;
+      }
+      #tip {
+        color: #666;
+        font-size: 16px;
+      }
+      #btn {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #409eff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tip">页面加载中，请稍候...</div>
+    <button id="btn" style="display:none;" onclick="go()">点击进入</button>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById('tip').innerText = "点击按钮继续访问页面";
+        document.getElementById('btn').style.display = "inline-block";
+      }, 1000);
+
+      function go() {
+        location.href = "https://s.c1ns.cn/vd3m3"; // ← 替换为你的有赞链接
+      }
+    </script>
+  </body>
 </html>
