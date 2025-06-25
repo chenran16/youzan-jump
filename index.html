@@ -1,42 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>加载中...</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        text-align: center;
-        margin-top: 30%;
-      }
-      #tip {
-        color: #666;
-        font-size: 16px;
-      }
-      #btn {
-        padding: 10px 20px;
-        font-size: 18px;
-        background-color: #409eff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        margin-top: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="tip">页面加载中，请稍候...</div>
-    <button id="btn" style="display:none;" onclick="go()">点击进入</button>
-
-    <script>
-      setTimeout(() => {
-        document.getElementById('tip').innerText = "点击按钮继续访问页面";
-        document.getElementById('btn').style.display = "inline-block";
-      }, 1000);
-
-      function go() {
-        location.href = "https://s.c1ns.cn/vd3m3"; // ← 替换为你的有赞链接
-      }
-    </script>
-  </body>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>正在加载...</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 30%;
+    }
+    #tip {
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div id="tip">页面加载中，请稍候...</div>
+  <script>
+    setTimeout(function() {
+      var url = atob("aHR0cHM6Ly9zLmMxbnMuY24vdmQzbTM="); // ← base64加密后的跳转链接
+      location.href = url;
+    }, 2000); // 延迟2秒跳转
+  </script>
+</body>
 </html>
